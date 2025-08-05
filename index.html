@@ -53,13 +53,32 @@
         z-index: 1;
     }
 
-    .sun {}
+    
+    .sun {
+      right: 50%;
+      transform: translateX(800px);
+    }
+
+    .moon {
+      left: 50%;
+      transform: translateX(-800px);
+    }
+
+    .show-sun {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .show-moon {
+      opacity: 1;
+      transform: translateX(0);
+    }
 </style>
 
 <body>
     <div class="card">
-        <button class="btn btn-day">Day</button>
-        <button class="btn btn-night">Night</button>
+        <button class="btn btn-day"  onclick="setDay">Day</button>
+        <button class="btn btn-night" onclick="setNight">Night</button>
     </div>
     <img src="sun.png" class="sun" id="sun">
     <img src="moon.png" class="moon" id="moon">
