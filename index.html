@@ -8,18 +8,19 @@
 </head>
 <style>
     body {
-        margin: 0%;
-        padding: 0%;
-        background-color: #fff;
-        justify-content: center;
-        display: flex;
-        text-align: center;
-        height: 100vh;
-        position: relative;
-        overflow: hidden;
-        background-image: url("day.jpg");
-        background-size: cover;
-        background-position: center;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-image 1s ease-in-out;
+      position: relative;
+      overflow: hidden;
+      background-image: url('day.jpg'); 
+      background-size: cover;
+      background-position: center;
 
     }
 
@@ -45,9 +46,17 @@
 
 <body>
     <div class="card">
-        <button class="btn">Day</button>
-        <button class="btn">Night</button>
+        <button class="btn btn-day">Day</button>
+        <button class="btn btn-night">Night</button>
     </div>
+    <img src="sun.png" class="sun" id="sun">
+    <img src="full-moon (1).png" class="moon" id="moon">
+
+
+
+    <script>
+
+    </script>
 </body>
 
 </html>
